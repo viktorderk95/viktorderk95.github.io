@@ -2,21 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Senior Flutter Developer</title>
+  <title>Viktor Danilov — Senior Flutter Developer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {
+    html, body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #4e54c8, #8f94fb);
-      color: #fff;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      height: 100%;
+      overflow: auto;
+    }
+
+    body {
+      background: url('https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+      background-size: cover;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
-      min-height: 100vh;
+    }
+
+    .overlay {
+      background: rgba(20, 18, 38, 0.85); /* фиолетово-синий оверлей */
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    .container {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      padding: 40px 20px;
       text-align: center;
-      padding: 20px;
+      color: #ffffff;
     }
 
     h1 {
@@ -26,57 +46,58 @@
 
     h2 {
       font-weight: 400;
-      font-size: 1.4em;
+      font-size: 1.3em;
       margin-top: 0;
       margin-bottom: 1.2em;
+      color: #cbb4f0;
     }
 
     p {
-      max-width: 700px;
       font-size: 1.1em;
       line-height: 1.7em;
       margin-bottom: 1.5em;
+      color: #e0ddee;
     }
 
     a.button {
-      background-color: #ffffff;
-      color: #4e54c8;
+      background-color: #cbb4f0;
+      color: #140c2d;
       padding: 12px 28px;
       border-radius: 30px;
       text-decoration: none;
       font-weight: bold;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
       transition: background 0.3s, color 0.3s;
     }
 
     a.button:hover {
-      background-color: #f0f0f0;
-      color: #333;
+      background-color: #b89de4;
+      color: #000;
     }
 
     footer {
       margin-top: 2em;
       font-size: 0.9em;
-      color: #ccc;
+      color: #bdbdbd;
     }
   </style>
 </head>
 <body>
-  <h1>Viktor Danilov</h1>
-  <h2>Senior Flutter Developer</h2>
-  <p>
-    I’m a passionate Flutter developer with 6+ years of experience building high-performance cross-platform applications. I specialize in designing and developing pixel-perfect UIs, seamless animations, and efficient architecture using BLoC, Provider, and Riverpod.
-  </p>
-  <p>
-    My expertise includes deep integrations with Firebase (Auth, Firestore, Functions, Storage), in-app purchases (RevenueCat), push notifications, REST and GraphQL APIs, as well as deployment for Android, iOS, and Web.
-  </p>
-  <p>
-    I enjoy working with startups and scale-ups to bring ideas to life with clean, maintainable code and modern UX. Let’s build something amazing together!
-  </p>
-  <a href="mailto:viktor.derk95@gmail.com" class="button">Contact Me</a>
-
-  <footer>
-    © 2025 Viktor Danilov
-  </footer>
+  <div class="overlay"></div>
+  <div class="container">
+    <h1>Viktor Danilov</h1>
+    <h2>Senior Flutter Developer</h2>
+    <p>
+      I'm a Flutter expert passionate about crafting elegant, responsive, and high-performance mobile applications. My mission is to turn ideas into fully functional products with beautiful UI and seamless UX.
+    </p>
+    <p>
+      I specialize in building scalable apps using Flutter and Firebase, with a strong focus on architecture, smooth animations, and real-time features. I’ve helped startups and teams launch apps across both iOS and Android platforms, and I love tackling complex tech challenges.
+    </p>
+    <p>
+      Whether you need a proof of concept or a production-ready solution, I bring experience, dedication, and clean code to every project.
+    </p>
+    <a href="mailto:viktor.derk95@gmail.com" class="button">Let's Connect</a>
+    <footer>© 2025 Viktor Danilov</footer>
+  </div>
 </body>
 </html>
