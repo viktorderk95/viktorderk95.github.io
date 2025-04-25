@@ -14,15 +14,14 @@
     }
 
     body {
-      background: url('https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
-      background-size: cover;
+      background: linear-gradient(135deg, #f2e9fb, #cfd9ff);
       display: flex;
       align-items: center;
       justify-content: center;
     }
 
     .overlay {
-      background: rgba(20, 18, 38, 0.85); /* фиолетово-синий оверлей */
+      background: rgba(255, 255, 255, 0.6);
       position: absolute;
       top: 0;
       left: 0;
@@ -36,67 +35,71 @@
       max-width: 800px;
       padding: 40px 20px;
       text-align: center;
-      color: #ffffff;
+      color: #2e2e5d;
     }
 
     h1 {
-      font-size: 2.7em;
+      font-size: 3em;
       margin-bottom: 0.2em;
+      font-weight: bold;
+      color: #2e2e5d;
     }
 
     h2 {
       font-weight: 400;
       font-size: 1.3em;
       margin-top: 0;
-      margin-bottom: 1.2em;
-      color: #cbb4f0;
+      margin-bottom: 1.5em;
+      color: #6a6a9f;
     }
 
     p {
       font-size: 1.1em;
       line-height: 1.7em;
       margin-bottom: 1.5em;
-      color: #e0ddee;
+      color: #4b4b7d;
     }
 
     a.button {
-      background-color: #cbb4f0;
-      color: #140c2d;
+      background-color: #8e94f2;
+      color: white;
       padding: 12px 28px;
       border-radius: 30px;
       text-decoration: none;
       font-weight: bold;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-      transition: background 0.3s, color 0.3s;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: background 0.3s, transform 0.2s;
     }
 
     a.button:hover {
-      background-color: #b89de4;
-      color: #000;
+      background-color: #7a83e6;
+      transform: translateY(-2px);
     }
 
     footer {
       margin-top: 2em;
       font-size: 0.9em;
-      color: #bdbdbd;
+      color: #8888aa;
     }
   </style>
 </head>
 <body>
   <div class="overlay"></div>
   <div class="container">
-    <h1>Viktor Danilov</h1>
-    <h2>Senior Flutter Developer</h2>
+    <h1>Shape the Future</h1>
+    <h2>Your Ideas, My Flutter Expertise.</h2>
+
     <p>
-      I'm a Flutter expert passionate about crafting elegant, responsive, and high-performance mobile applications. My mission is to turn ideas into fully functional products with beautiful UI and seamless UX.
+      Hi, I'm <strong>Viktor Danilov</strong> — a senior Flutter developer dedicated to turning your product ideas into beautiful, high-performance apps.
     </p>
     <p>
-      I specialize in building scalable apps using Flutter and Firebase, with a strong focus on architecture, smooth animations, and real-time features. I’ve helped startups and teams launch apps across both iOS and Android platforms, and I love tackling complex tech challenges.
+      I specialize in building cross-platform experiences using Flutter and Firebase, with clean architecture, modern animations, and a focus on user delight. Whether you're building a startup MVP or scaling a production app — I’ve got your back.
     </p>
     <p>
-      Whether you need a proof of concept or a production-ready solution, I bring experience, dedication, and clean code to every project.
+      Let’s create mobile experiences that stand out.
     </p>
-    <a href="mailto:viktor.derk95@gmail.com" class="button">Let's Connect</a>
+
+    <a href="mailto:viktor.derk95@gmail.com" class="button">Contact Me</a>
     <footer>© 2025 Viktor Danilov</footer>
   </div>
 </body>
